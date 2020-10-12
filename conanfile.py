@@ -1,14 +1,14 @@
 from conans import ConanFile, CMake, tools
 
 
-class JuceconanConan(ConanFile):
+class JuceConan(ConanFile):
     name = "juce"
     version = "0.1"
     license = "GPL3"
-    author = "Izmar Verhage, izmaelverhage@gmail.com"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "conan wrapper for JUCE6"
-    topics = ("<Put some tag here>", "<here>", "<and here>")
+    author = "Raw Material Software Limited"
+    url = "https://github.com/juce-framework/JUCE"
+    description = "Open-source cross-platform C++ application framework for desktop and mobile applications"
+    topics = ("audio", "music", "dsp", "gui", "cross-platform" )
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
 
