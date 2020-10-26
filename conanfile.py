@@ -27,7 +27,8 @@ class JuceConan(ConanFile):
     def package(self):
         cmake = self._configure_cmake()
         cmake.install()
+        cmake.patch_config_paths()
 
+# Use juce_add_plugin to link the right libs in your consumer
     def package_info(self):
-        self.cpp_info.libs = ["juce"]
-
+        self.cpp_info.libs = []
