@@ -18,7 +18,8 @@ class JuceConan(ConanFile):
         return cmake
 
     def source(self):
-        self.run("git clone https://github.com/juce-framework/JUCE .")
+        self.run("git clone https://github.com/izzyreal/JUCE .")
+        self.run("git checkout raw-keycode")
         
     def build(self):
         cmake = self._configure_cmake()
