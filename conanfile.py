@@ -9,7 +9,7 @@ class JuceConan(ConanFile):
     url = "https://github.com/juce-framework/JUCE"
     description = "Open-source cross-platform C++ application framework for desktop and mobile applications"
     topics = ("audio", "music", "dsp", "gui", "cross-platform" )
-    settings = "os", "compiler", "build_type", "arch"
+    settings = "os", "compiler", "arch"
     generators = "cmake"
 
     def _configure_cmake(self):
