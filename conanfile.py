@@ -18,7 +18,7 @@ class JuceConan(ConanFile):
         return cmake
 
     def source(self):
-        self.run("git clone --single-branch --branch raw-key-events-3 --depth 1 https://github.com/izzyreal/JUCE .")
+        self.run("git clone --single-branch --branch raw-key-events-lv2 --depth 1 https://github.com/izzyreal/JUCE .")
         
     def build(self):
         cmake = self._configure_cmake()
